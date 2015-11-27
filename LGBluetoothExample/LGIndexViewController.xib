@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LGIndexViewController">
+            <connections>
+                <outlet property="bleTableView" destination="ooH-b3-tsg" id="6Cd-Us-AH9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ho-cA-DAY" userLabel="mainView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ooH-b3-tsg">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="iMc-rt-pnN"/>
+                                <outlet property="delegate" destination="-1" id="eOk-Dc-mxr"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-1o-TV0">
+                            <rect key="frame" x="56" y="526" width="207" height="42"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="BUm-OR-lcI"/>
+                                <constraint firstAttribute="width" constant="207" id="fbW-hi-p22"/>
+                            </constraints>
+                            <state key="normal" title="结束"/>
+                            <connections>
+                                <action selector="actionStop:" destination="-1" eventType="touchUpInside" id="56V-Ke-gvZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="8hY-1o-TV0" firstAttribute="centerX" secondItem="8Ho-cA-DAY" secondAttribute="centerX" id="7bM-d2-2mr"/>
+                        <constraint firstAttribute="trailing" secondItem="ooH-b3-tsg" secondAttribute="trailing" id="FOc-bk-trh"/>
+                        <constraint firstAttribute="bottom" secondItem="ooH-b3-tsg" secondAttribute="bottom" constant="50" id="Lkv-GR-aWH"/>
+                        <constraint firstAttribute="bottom" secondItem="8hY-1o-TV0" secondAttribute="bottom" id="jZl-XS-rbL"/>
+                        <constraint firstItem="ooH-b3-tsg" firstAttribute="leading" secondItem="8Ho-cA-DAY" secondAttribute="leading" id="rAZ-94-FoN"/>
+                        <constraint firstItem="ooH-b3-tsg" firstAttribute="top" secondItem="8Ho-cA-DAY" secondAttribute="top" id="x1V-Fi-SHh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8Ho-cA-DAY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4NK-fW-107"/>
+                <constraint firstItem="8Ho-cA-DAY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T5J-Qm-lFy"/>
+                <constraint firstAttribute="trailing" secondItem="8Ho-cA-DAY" secondAttribute="trailing" id="jYl-Nw-IPV"/>
+                <constraint firstAttribute="bottom" secondItem="8Ho-cA-DAY" secondAttribute="bottom" id="pVB-AI-YW0"/>
+            </constraints>
+            <point key="canvasLocation" x="213" y="231"/>
+        </view>
+    </objects>
+</document>

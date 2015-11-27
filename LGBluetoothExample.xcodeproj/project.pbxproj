@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E986BB018A505B500BB66DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E986BAF18A505B500BB66DA /* Foundation.framework */; };
+		8E986BB218A505B500BB66DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E986BB118A505B500BB66DA /* CoreGraphics.framework */; };
+		8E986BB418A505B500BB66DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E986BB318A505B500BB66DA /* UIKit.framework */; };
+		8E986BBA18A505B500BB66DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E986BB818A505B500BB66DA /* InfoPlist.strings */; };
+		8E986BBC18A505B500BB66DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986BBB18A505B500BB66DA /* main.m */; };
+		8E986BC018A505B500BB66DA /* LGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986BBF18A505B500BB66DA /* LGAppDelegate.m */; };
+		8E986BC618A505B500BB66DA /* LGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986BC518A505B500BB66DA /* LGViewController.m */; };
+		8E986BC818A505B500BB66DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E986BC718A505B500BB66DA /* Images.xcassets */; };
+		8E986BCF18A505B500BB66DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E986BCE18A505B500BB66DA /* XCTest.framework */; };
+		8E986BD018A505B500BB66DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E986BAF18A505B500BB66DA /* Foundation.framework */; };
+		8E986BD118A505B500BB66DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E986BB318A505B500BB66DA /* UIKit.framework */; };
+		8E986BD918A505B500BB66DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E986BD718A505B500BB66DA /* InfoPlist.strings */; };
+		8E986BDB18A505B500BB66DA /* LGBluetoothExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986BDA18A505B500BB66DA /* LGBluetoothExampleTests.m */; };
+		8E986C0618A505E300BB66DA /* CBUUID+StringExtraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986BFA18A505E300BB66DA /* CBUUID+StringExtraction.m */; };
+		8E986C0718A505E300BB66DA /* LGCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986BFD18A505E300BB66DA /* LGCentralManager.m */; };
+		8E986C0818A505E300BB66DA /* LGCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986BFF18A505E300BB66DA /* LGCharacteristic.m */; };
+		8E986C0918A505E300BB66DA /* LGPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986C0118A505E300BB66DA /* LGPeripheral.m */; };
+		8E986C0A18A505E300BB66DA /* LGService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986C0318A505E300BB66DA /* LGService.m */; };
+		8E986C0B18A505E300BB66DA /* LGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E986C0518A505E300BB66DA /* LGUtils.m */; };
+		A606D7711C0854C00022EC14 /* FootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A606D7701C0854C00022EC14 /* FootNavigationController.m */; };
+		A606D7741C0854FF0022EC14 /* iConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = A606D7731C0854FF0022EC14 /* iConsole.m */; };
+		A606D7781C0855640022EC14 /* TestIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A606D7761C0855640022EC14 /* TestIndexViewController.m */; };
+		A606D7791C0855640022EC14 /* TestIndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A606D7771C0855640022EC14 /* TestIndexViewController.xib */; };
+		A606D7801C0855BF0022EC14 /* FootBleDevTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A606D77B1C0855BF0022EC14 /* FootBleDevTableViewCell.m */; };
+		A606D7811C0855BF0022EC14 /* FootBleDevTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A606D77C1C0855BF0022EC14 /* FootBleDevTableViewCell.xib */; };
+		A606D7821C0855BF0022EC14 /* FootBleSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A606D77E1C0855BF0022EC14 /* FootBleSelectViewController.m */; };
+		A606D7831C0855BF0022EC14 /* FootBleSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A606D77F1C0855BF0022EC14 /* FootBleSelectViewController.xib */; };
+		A606D7871C0858820022EC14 /* GTMStackTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = A606D7861C0858820022EC14 /* GTMStackTrace.m */; };
+		A606D78D1C085F550022EC14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A606D78C1C085F550022EC14 /* LaunchScreen.xib */; };
+		A606D7901C08600D0022EC14 /* TestPeripheralManger.m in Sources */ = {isa = PBXBuildFile; fileRef = A606D78F1C08600D0022EC14 /* TestPeripheralManger.m */; };
+		A606D7941C088E3B0022EC14 /* IndexPeriperalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A606D7921C088E3B0022EC14 /* IndexPeriperalTableViewCell.m */; };
+		A606D7951C088E3B0022EC14 /* IndexPeriperalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A606D7931C088E3B0022EC14 /* IndexPeriperalTableViewCell.xib */; };
+		A606D7A21C089EB20022EC14 /* LGIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A606D7A01C089EB20022EC14 /* LGIndexViewController.m */; };
+		A606D7A31C089EB20022EC14 /* LGIndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A606D7A11C089EB20022EC14 /* LGIndexViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E986BD218A505B500BB66DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E986BA418A505B500BB66DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E986BAB18A505B500BB66DA;
+			remoteInfo = LGBluetoothExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E986BAC18A505B500BB66DA /* LGBluetoothExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGBluetoothExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E986BAF18A505B500BB66DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E986BB118A505B500BB66DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E986BB318A505B500BB66DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E986BB718A505B500BB66DA /* LGBluetoothExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LGBluetoothExample-Info.plist"; sourceTree = "<group>"; };
+		8E986BB918A505B500BB66DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E986BBB18A505B500BB66DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E986BBD18A505B500BB66DA /* LGBluetoothExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LGBluetoothExample-Prefix.pch"; sourceTree = "<group>"; };
+		8E986BBE18A505B500BB66DA /* LGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGAppDelegate.h; sourceTree = "<group>"; };
+		8E986BBF18A505B500BB66DA /* LGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGAppDelegate.m; sourceTree = "<group>"; };
+		8E986BC418A505B500BB66DA /* LGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGViewController.h; sourceTree = "<group>"; };
+		8E986BC518A505B500BB66DA /* LGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGViewController.m; sourceTree = "<group>"; };
+		8E986BC718A505B500BB66DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8E986BCD18A505B500BB66DA /* LGBluetoothExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LGBluetoothExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E986BCE18A505B500BB66DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8E986BD618A505B500BB66DA /* LGBluetoothExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LGBluetoothExampleTests-Info.plist"; sourceTree = "<group>"; };
+		8E986BD818A505B500BB66DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E986BDA18A505B500BB66DA /* LGBluetoothExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBluetoothExampleTests.m; sourceTree = "<group>"; };
+		8E986BF918A505E300BB66DA /* CBUUID+StringExtraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBUUID+StringExtraction.h"; sourceTree = "<group>"; };
+		8E986BFA18A505E300BB66DA /* CBUUID+StringExtraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBUUID+StringExtraction.m"; sourceTree = "<group>"; };
+		8E986BFB18A505E300BB66DA /* LGBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBluetooth.h; sourceTree = "<group>"; };
+		8E986BFC18A505E300BB66DA /* LGCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCentralManager.h; sourceTree = "<group>"; };
+		8E986BFD18A505E300BB66DA /* LGCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCentralManager.m; sourceTree = "<group>"; };
+		8E986BFE18A505E300BB66DA /* LGCharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCharacteristic.h; sourceTree = "<group>"; };
+		8E986BFF18A505E300BB66DA /* LGCharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCharacteristic.m; sourceTree = "<group>"; };
+		8E986C0018A505E300BB66DA /* LGPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPeripheral.h; sourceTree = "<group>"; };
+		8E986C0118A505E300BB66DA /* LGPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPeripheral.m; sourceTree = "<group>"; };
+		8E986C0218A505E300BB66DA /* LGService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGService.h; sourceTree = "<group>"; };
+		8E986C0318A505E300BB66DA /* LGService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGService.m; sourceTree = "<group>"; };
+		8E986C0418A505E300BB66DA /* LGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGUtils.h; sourceTree = "<group>"; };
+		8E986C0518A505E300BB66DA /* LGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGUtils.m; sourceTree = "<group>"; };
+		A606D76F1C0854C00022EC14 /* FootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootNavigationController.h; sourceTree = "<group>"; };
+		A606D7701C0854C00022EC14 /* FootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FootNavigationController.m; sourceTree = "<group>"; };
+		A606D7721C0854FF0022EC14 /* iConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iConsole.h; sourceTree = "<group>"; };
+		A606D7731C0854FF0022EC14 /* iConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iConsole.m; sourceTree = "<group>"; };
+		A606D7751C0855640022EC14 /* TestIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestIndexViewController.h; sourceTree = "<group>"; };
+		A606D7761C0855640022EC14 /* TestIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestIndexViewController.m; sourceTree = "<group>"; };
+		A606D7771C0855640022EC14 /* TestIndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestIndexViewController.xib; sourceTree = "<group>"; };
+		A606D77A1C0855BF0022EC14 /* FootBleDevTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootBleDevTableViewCell.h; sourceTree = "<group>"; };
+		A606D77B1C0855BF0022EC14 /* FootBleDevTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FootBleDevTableViewCell.m; sourceTree = "<group>"; };
+		A606D77C1C0855BF0022EC14 /* FootBleDevTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FootBleDevTableViewCell.xib; sourceTree = "<group>"; };
+		A606D77D1C0855BF0022EC14 /* FootBleSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FootBleSelectViewController.h; sourceTree = "<group>"; };
+		A606D77E1C0855BF0022EC14 /* FootBleSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FootBleSelectViewController.m; sourceTree = "<group>"; };
+		A606D77F1C0855BF0022EC14 /* FootBleSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FootBleSelectViewController.xib; sourceTree = "<group>"; };
+		A606D7841C0857520022EC14 /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		A606D7851C0858820022EC14 /* GTMStackTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMStackTrace.h; sourceTree = "<group>"; };
+		A606D7861C0858820022EC14 /* GTMStackTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStackTrace.m; sourceTree = "<group>"; };
+		A606D78C1C085F550022EC14 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		A606D78E1C08600D0022EC14 /* TestPeripheralManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPeripheralManger.h; sourceTree = "<group>"; };
+		A606D78F1C08600D0022EC14 /* TestPeripheralManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPeripheralManger.m; sourceTree = "<group>"; };
+		A606D7911C088E3B0022EC14 /* IndexPeriperalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexPeriperalTableViewCell.h; sourceTree = "<group>"; };
+		A606D7921C088E3B0022EC14 /* IndexPeriperalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexPeriperalTableViewCell.m; sourceTree = "<group>"; };
+		A606D7931C088E3B0022EC14 /* IndexPeriperalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexPeriperalTableViewCell.xib; sourceTree = "<group>"; };
+		A606D79F1C089EB20022EC14 /* LGIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGIndexViewController.h; sourceTree = "<group>"; };
+		A606D7A01C089EB20022EC14 /* LGIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGIndexViewController.m; sourceTree = "<group>"; };
+		A606D7A11C089EB20022EC14 /* LGIndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGIndexViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E986BA918A505B500BB66DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E986BB218A505B500BB66DA /* CoreGraphics.framework in Frameworks */,
+				8E986BB418A505B500BB66DA /* UIKit.framework in Frameworks */,
+				8E986BB018A505B500BB66DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E986BCA18A505B500BB66DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E986BCF18A505B500BB66DA /* XCTest.framework in Frameworks */,
+				8E986BD118A505B500BB66DA /* UIKit.framework in Frameworks */,
+				8E986BD018A505B500BB66DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E986BA318A505B500BB66DA = {
+			isa = PBXGroup;
+			children = (
+				8E986BF818A505E300BB66DA /* LGBluetooth */,
+				8E986BB518A505B500BB66DA /* LGBluetoothExample */,
+				A606D78C1C085F550022EC14 /* LaunchScreen.xib */,
+				8E986BD418A505B500BB66DA /* LGBluetoothExampleTests */,
+				8E986BAE18A505B500BB66DA /* Frameworks */,
+				8E986BAD18A505B500BB66DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E986BAD18A505B500BB66DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E986BAC18A505B500BB66DA /* LGBluetoothExample.app */,
+				8E986BCD18A505B500BB66DA /* LGBluetoothExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E986BAE18A505B500BB66DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E986BAF18A505B500BB66DA /* Foundation.framework */,
+				8E986BB118A505B500BB66DA /* CoreGraphics.framework */,
+				8E986BB318A505B500BB66DA /* UIKit.framework */,
+				8E986BCE18A505B500BB66DA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E986BB518A505B500BB66DA /* LGBluetoothExample */ = {
+			isa = PBXGroup;
+			children = (
+				A606D7841C0857520022EC14 /* Colors.h */,
+				A606D7721C0854FF0022EC14 /* iConsole.h */,
+				A606D7731C0854FF0022EC14 /* iConsole.m */,
+				A606D7851C0858820022EC14 /* GTMStackTrace.h */,
+				A606D7861C0858820022EC14 /* GTMStackTrace.m */,
+				A606D76F1C0854C00022EC14 /* FootNavigationController.h */,
+				A606D7701C0854C00022EC14 /* FootNavigationController.m */,
+				8E986BBE18A505B500BB66DA /* LGAppDelegate.h */,
+				8E986BBF18A505B500BB66DA /* LGAppDelegate.m */,
+				8E986BC418A505B500BB66DA /* LGViewController.h */,
+				8E986BC518A505B500BB66DA /* LGViewController.m */,
+				8E986BC718A505B500BB66DA /* Images.xcassets */,
+				8E986BB618A505B500BB66DA /* Supporting Files */,
+				A606D7751C0855640022EC14 /* TestIndexViewController.h */,
+				A606D7761C0855640022EC14 /* TestIndexViewController.m */,
+				A606D7771C0855640022EC14 /* TestIndexViewController.xib */,
+				A606D79F1C089EB20022EC14 /* LGIndexViewController.h */,
+				A606D7A01C089EB20022EC14 /* LGIndexViewController.m */,
+				A606D7A11C089EB20022EC14 /* LGIndexViewController.xib */,
+				A606D7911C088E3B0022EC14 /* IndexPeriperalTableViewCell.h */,
+				A606D7921C088E3B0022EC14 /* IndexPeriperalTableViewCell.m */,
+				A606D7931C088E3B0022EC14 /* IndexPeriperalTableViewCell.xib */,
+				A606D77A1C0855BF0022EC14 /* FootBleDevTableViewCell.h */,
+				A606D77B1C0855BF0022EC14 /* FootBleDevTableViewCell.m */,
+				A606D77C1C0855BF0022EC14 /* FootBleDevTableViewCell.xib */,
+				A606D77D1C0855BF0022EC14 /* FootBleSelectViewController.h */,
+				A606D77E1C0855BF0022EC14 /* FootBleSelectViewController.m */,
+				A606D77F1C0855BF0022EC14 /* FootBleSelectViewController.xib */,
+				A606D78E1C08600D0022EC14 /* TestPeripheralManger.h */,
+				A606D78F1C08600D0022EC14 /* TestPeripheralManger.m */,
+			);
+			path = LGBluetoothExample;
+			sourceTree = "<group>";
+		};
+		8E986BB618A505B500BB66DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E986BB718A505B500BB66DA /* LGBluetoothExample-Info.plist */,
+				8E986BB818A505B500BB66DA /* InfoPlist.strings */,
+				8E986BBB18A505B500BB66DA /* main.m */,
+				8E986BBD18A505B500BB66DA /* LGBluetoothExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E986BD418A505B500BB66DA /* LGBluetoothExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E986BDA18A505B500BB66DA /* LGBluetoothExampleTests.m */,
+				8E986BD518A505B500BB66DA /* Supporting Files */,
+			);
+			path = LGBluetoothExampleTests;
+			sourceTree = "<group>";
+		};
+		8E986BD518A505B500BB66DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E986BD618A505B500BB66DA /* LGBluetoothExampleTests-Info.plist */,
+				8E986BD718A505B500BB66DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E986BF818A505E300BB66DA /* LGBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				8E986BF918A505E300BB66DA /* CBUUID+StringExtraction.h */,
+				8E986BFA18A505E300BB66DA /* CBUUID+StringExtraction.m */,
+				8E986BFB18A505E300BB66DA /* LGBluetooth.h */,
+				8E986BFC18A505E300BB66DA /* LGCentralManager.h */,
+				8E986BFD18A505E300BB66DA /* LGCentralManager.m */,
+				8E986BFE18A505E300BB66DA /* LGCharacteristic.h */,
+				8E986BFF18A505E300BB66DA /* LGCharacteristic.m */,
+				8E986C0018A505E300BB66DA /* LGPeripheral.h */,
+				8E986C0118A505E300BB66DA /* LGPeripheral.m */,
+				8E986C0218A505E300BB66DA /* LGService.h */,
+				8E986C0318A505E300BB66DA /* LGService.m */,
+				8E986C0418A505E300BB66DA /* LGUtils.h */,
+				8E986C0518A505E300BB66DA /* LGUtils.m */,
+			);
+			path = LGBluetooth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E986BAB18A505B500BB66DA /* LGBluetoothExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E986BDE18A505B500BB66DA /* Build configuration list for PBXNativeTarget "LGBluetoothExample" */;
+			buildPhases = (
+				8E986BA818A505B500BB66DA /* Sources */,
+				8E986BA918A505B500BB66DA /* Frameworks */,
+				8E986BAA18A505B500BB66DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LGBluetoothExample;
+			productName = LGBluetoothExample;
+			productReference = 8E986BAC18A505B500BB66DA /* LGBluetoothExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E986BCC18A505B500BB66DA /* LGBluetoothExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E986BE118A505B500BB66DA /* Build configuration list for PBXNativeTarget "LGBluetoothExampleTests" */;
+			buildPhases = (
+				8E986BC918A505B500BB66DA /* Sources */,
+				8E986BCA18A505B500BB66DA /* Frameworks */,
+				8E986BCB18A505B500BB66DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E986BD318A505B500BB66DA /* PBXTargetDependency */,
+			);
+			name = LGBluetoothExampleTests;
+			productName = LGBluetoothExampleTests;
+			productReference = 8E986BCD18A505B500BB66DA /* LGBluetoothExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E986BA418A505B500BB66DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "David Sahakyan";
+				TargetAttributes = {
+					8E986BCC18A505B500BB66DA = {
+						TestTargetID = 8E986BAB18A505B500BB66DA;
+					};
+				};
+			};
+			buildConfigurationList = 8E986BA718A505B500BB66DA /* Build configuration list for PBXProject "LGBluetoothExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E986BA318A505B500BB66DA;
+			productRefGroup = 8E986BAD18A505B500BB66DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E986BAB18A505B500BB66DA /* LGBluetoothExample */,
+				8E986BCC18A505B500BB66DA /* LGBluetoothExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E986BAA18A505B500BB66DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A606D7831C0855BF0022EC14 /* FootBleSelectViewController.xib in Resources */,
+				8E986BC818A505B500BB66DA /* Images.xcassets in Resources */,
+				8E986BBA18A505B500BB66DA /* InfoPlist.strings in Resources */,
+				A606D78D1C085F550022EC14 /* LaunchScreen.xib in Resources */,
+				A606D7A31C089EB20022EC14 /* LGIndexViewController.xib in Resources */,
+				A606D7811C0855BF0022EC14 /* FootBleDevTableViewCell.xib in Resources */,
+				A606D7791C0855640022EC14 /* TestIndexViewController.xib in Resources */,
+				A606D7951C088E3B0022EC14 /* IndexPeriperalTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E986BCB18A505B500BB66DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E986BD918A505B500BB66DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E986BA818A505B500BB66DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E986C0918A505E300BB66DA /* LGPeripheral.m in Sources */,
+				8E986BBC18A505B500BB66DA /* main.m in Sources */,
+				A606D7941C088E3B0022EC14 /* IndexPeriperalTableViewCell.m in Sources */,
+				A606D7801C0855BF0022EC14 /* FootBleDevTableViewCell.m in Sources */,
+				8E986C0618A505E300BB66DA /* CBUUID+StringExtraction.m in Sources */,
+				8E986BC018A505B500BB66DA /* LGAppDelegate.m in Sources */,
+				8E986C0818A505E300BB66DA /* LGCharacteristic.m in Sources */,
+				8E986BC618A505B500BB66DA /* LGViewController.m in Sources */,
+				A606D7901C08600D0022EC14 /* TestPeripheralManger.m in Sources */,
+				A606D7871C0858820022EC14 /* GTMStackTrace.m in Sources */,
+				8E986C0A18A505E300BB66DA /* LGService.m in Sources */,
+				A606D7821C0855BF0022EC14 /* FootBleSelectViewController.m in Sources */,
+				A606D7A21C089EB20022EC14 /* LGIndexViewController.m in Sources */,
+				A606D7781C0855640022EC14 /* TestIndexViewController.m in Sources */,
+				8E986C0718A505E300BB66DA /* LGCentralManager.m in Sources */,
+				A606D7741C0854FF0022EC14 /* iConsole.m in Sources */,
+				8E986C0B18A505E300BB66DA /* LGUtils.m in Sources */,
+				A606D7711C0854C00022EC14 /* FootNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E986BC918A505B500BB66DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E986BDB18A505B500BB66DA /* LGBluetoothExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E986BD318A505B500BB66DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E986BAB18A505B500BB66DA /* LGBluetoothExample */;
+			targetProxy = 8E986BD218A505B500BB66DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E986BB818A505B500BB66DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E986BB918A505B500BB66DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8E986BD718A505B500BB66DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E986BD818A505B500BB66DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E986BDC18A505B500BB66DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E986BDD18A505B500BB66DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E986BDF18A505B500BB66DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paodong co., ltd. (L6U7BB57HF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paodong co., ltd. (L6U7BB57HF)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LGBluetoothExample/LGBluetoothExample-Prefix.pch";
+				INFOPLIST_FILE = "LGBluetoothExample/LGBluetoothExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.runmaf.lightblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8ca86f96-70d6-4695-b5ae-7a38ecf152cd";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E986BE018A505B500BB66DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Paodong co., ltd. (L6U7BB57HF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Paodong co., ltd. (L6U7BB57HF)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LGBluetoothExample/LGBluetoothExample-Prefix.pch";
+				INFOPLIST_FILE = "LGBluetoothExample/LGBluetoothExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.runmaf.lightblue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8ca86f96-70d6-4695-b5ae-7a38ecf152cd";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8E986BE218A505B500BB66DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LGBluetoothExample.app/LGBluetoothExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LGBluetoothExample/LGBluetoothExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LGBluetoothExampleTests/LGBluetoothExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8E986BE318A505B500BB66DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LGBluetoothExample.app/LGBluetoothExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LGBluetoothExample/LGBluetoothExample-Prefix.pch";
+				INFOPLIST_FILE = "LGBluetoothExampleTests/LGBluetoothExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E986BA718A505B500BB66DA /* Build configuration list for PBXProject "LGBluetoothExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E986BDC18A505B500BB66DA /* Debug */,
+				8E986BDD18A505B500BB66DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E986BDE18A505B500BB66DA /* Build configuration list for PBXNativeTarget "LGBluetoothExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E986BDF18A505B500BB66DA /* Debug */,
+				8E986BE018A505B500BB66DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E986BE118A505B500BB66DA /* Build configuration list for PBXNativeTarget "LGBluetoothExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E986BE218A505B500BB66DA /* Debug */,
+				8E986BE318A505B500BB66DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E986BA418A505B500BB66DA /* Project object */;
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FootBleDevTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="74" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcn-TB-imY">
+                        <rect key="frame" x="28" y="14" width="12" height="12"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Lxx-1i-ydK"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="txS-am-FN5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoe Monitor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IP8-Ge-Uyd">
+                        <rect key="frame" x="48" y="9" width="103" height="21"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="JOP-h5-xc4"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="VtQ-Ak-I51"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-G4-Iuz">
+                        <rect key="frame" x="236" y="5" width="60" height="29"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="bI9-gN-wYT"/>
+                            <constraint firstAttribute="width" constant="60" id="mpF-FN-MWW"/>
+                        </constraints>
+                        <state key="normal" title="连接">
+                            <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="connectBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="RPe-Kq-Ks3"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vdc-G4-Iuz" secondAttribute="trailing" constant="24" id="99t-2M-dps"/>
+                    <constraint firstAttribute="centerY" secondItem="Qcn-TB-imY" secondAttribute="centerY" id="D6S-n3-cdv"/>
+                    <constraint firstAttribute="centerY" secondItem="IP8-Ge-Uyd" secondAttribute="centerY" id="KoU-Ev-bbF"/>
+                    <constraint firstItem="IP8-Ge-Uyd" firstAttribute="leading" secondItem="Qcn-TB-imY" secondAttribute="trailing" constant="8" id="lht-Q4-3lq"/>
+                    <constraint firstAttribute="centerY" secondItem="vdc-G4-Iuz" secondAttribute="centerY" id="lwI-Jq-vVK"/>
+                    <constraint firstItem="Qcn-TB-imY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="n1Y-Fv-LS8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="bleConnectLabel" destination="vdc-G4-Iuz" id="x4H-Ma-5cB"/>
+                <outlet property="bleDeviceNameLabel" destination="IP8-Ge-Uyd" id="UWy-Hm-Mr0"/>
+                <outlet property="bleSignalLabel" destination="Qcn-TB-imY" id="3pD-Sh-Wxr"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
