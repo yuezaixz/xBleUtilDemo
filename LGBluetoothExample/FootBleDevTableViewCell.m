@@ -35,10 +35,12 @@
 }
 
 - (IBAction)connectBtnAction:(id)sender {
+    [self.bleConnectLabel setTitle:@"连接中" forState:UIControlStateNormal];
     [self.peripheral connectWithCompletion:^(NSError *error) {
         if (!error) {
             [[TestPeripheralManger sharedInstance].peripherals addObject:self.peripheral];
             self.bleConnectLabel.hidden = YES;
+            [self.bleConnectLabel setTitle:@"重试" forState:UIControlStateNormal];
         }
     }];
 }
