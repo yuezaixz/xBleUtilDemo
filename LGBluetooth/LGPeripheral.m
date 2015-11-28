@@ -77,6 +77,31 @@ NSString * const kConnectionMissingErrorMessage = @"BLE Device is not connected"
     return [_rssiArray count]?[[_rssiArray valueForKeyPath:@"@avg.floatValue"] floatValue]:0;
 }
 
+- (NSInteger)countLessThan50{
+    return [self countRssiWithCond:@" integerValue >= -50"];
+}
+
+- (NSInteger)countMoreThan50{
+    return [self countRssiWithCond:@" integerValue < -50 and integerValue >= -70 "];
+}
+
+- (NSInteger)countMoreThan70{
+    return [self countRssiWithCond:@" integerValue < -70 and integerValue >=-90 "];
+}
+
+- (NSInteger)countMoreThan90{
+    return [self countRssiWithCond:@" integerValue < -90 "];
+}
+
+- (NSInteger)countRssiWithCond:(NSString *)cond{
+    
+    if (![_rssiArray count]) {
+        return 0;
+    }
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:cond];
+    return [[_rssiArray filteredArrayUsingPredicate:predicate] count];
+}
+
 /*----------------------------------------------------*/
 #pragma mark - Getter/Setter -
 /*----------------------------------------------------*/

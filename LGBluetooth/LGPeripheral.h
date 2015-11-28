@@ -182,7 +182,10 @@ typedef void(^LGPeripheralRSSIValueCallback)(NSNumber *RSSI, NSError *error);
 - (NSInteger)maxRssi;
 - (NSInteger)minRssi;
 - (NSInteger)avgRssi;
-
+- (NSInteger)countLessThan50;
+- (NSInteger)countMoreThan50;
+- (NSInteger)countMoreThan70;
+- (NSInteger)countMoreThan90;
 #pragma mark - Private Handlers -
 
 // ----- Used for input events -----/
