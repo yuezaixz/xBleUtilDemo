@@ -93,6 +93,24 @@ NSString * const kConnectionMissingErrorMessage = @"BLE Device is not connected"
     return [self countRssiWithCond:@" integerValue < -90 "];
 }
 
+- (NSString *)resultForRssiTest{
+    NSMutableString *result = [[NSMutableString alloc] init];
+    [result appendFormat:@"蓝牙设备名：%@\n",self.name];
+    [result appendFormat:@"最大RSSI：%ld\n",self.maxRssi];
+    [result appendFormat:@"平均RSSI：%ld\n",self.avgRssi];
+    [result appendFormat:@"最小RSSI：%ld\n",self.minRssi];
+    [result appendFormat:@"<=50：%ld\n",self.countLessThan50];
+    [result appendFormat:@"51~70：%ld\n",self.countMoreThan50];
+    [result appendFormat:@"71~90：%ld\n",self.countMoreThan70];
+    [result appendFormat:@">=90：%ld\n",self.countMoreThan90];
+    
+    for (int i = 0; i < [self.rssiArray count]; i++) {
+        NSInteger rssi = [[self.rssiArray objectAtIndex:i] integerValue];
+        [result appendFormat:@"%08d：%ld\n",i,rssi];
+    }
+    return result;
+}
+
 - (NSInteger)countRssiWithCond:(NSString *)cond{
     
     if (![_rssiArray count]) {
@@ -159,6 +177,10 @@ NSString * const kConnectionMissingErrorMessage = @"BLE Device is not connected"
 {
     self.disconnectBlock = aCallback;
     [self.manager.manager cancelPeripheralConnection:self.cbPeripheral];
+}
+
+- (void)setDidconnectCallbackCompletion:(LGPeripheralConnectionCallback)aCallback{
+    self.disconnectBlock = aCallback;
 }
 
 - (void)discoverServicesWithCompletion:(LGPeripheralDiscoverServicesCallback)aCallback

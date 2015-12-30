@@ -40,8 +40,14 @@
         if (!error) {
             [[TestPeripheralManger sharedInstance].peripherals addObject:self.peripheral];
             self.bleConnectLabel.hidden = YES;
+        } else {
             [self.bleConnectLabel setTitle:@"重试" forState:UIControlStateNormal];
         }
+    }];
+    __weak FootBleDevTableViewCell *weakSelf = self;
+    [self.peripheral setDidconnectCallbackCompletion:^(NSError *error) {
+        [weakSelf.bleConnectLabel setTitle:@"重试" forState:UIControlStateNormal];
+        weakSelf.bleConnectLabel.hidden = NO;
     }];
 }
 

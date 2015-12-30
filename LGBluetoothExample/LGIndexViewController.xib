@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LGIndexViewController">
@@ -21,7 +21,6 @@
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ooH-b3-tsg">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
-                            <animations/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <outlet property="dataSource" destination="-1" id="iMc-rt-pnN"/>
@@ -30,18 +29,16 @@
                         </tableView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-1o-TV0">
                             <rect key="frame" x="56" y="526" width="207" height="42"/>
-                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="42" id="BUm-OR-lcI"/>
                                 <constraint firstAttribute="width" constant="207" id="fbW-hi-p22"/>
                             </constraints>
-                            <state key="normal" title="结束"/>
+                            <state key="normal" title="结束并邮件发送结果"/>
                             <connections>
                                 <action selector="actionStop:" destination="-1" eventType="touchUpInside" id="56V-Ke-gvZ"/>
                             </connections>
                         </button>
                     </subviews>
-                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="8hY-1o-TV0" firstAttribute="centerX" secondItem="8Ho-cA-DAY" secondAttribute="centerX" id="7bM-d2-2mr"/>
@@ -53,7 +50,6 @@
                     </constraints>
                 </view>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="8Ho-cA-DAY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4NK-fW-107"/>

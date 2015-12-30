@@ -43,7 +43,24 @@ static NSString *IndexPeriperalTableViewCellIdentifier = @"IndexPeriperalTableVi
     [super didReceiveMemoryWarning];
 }
 - (IBAction)actionStop:(id)sender {
+    NSArray *peripherals = [TestPeripheralManger sharedInstance].peripherals;
+    NSMutableArray *logs = [NSMutableArray array];
+    for (LGPeripheral *peripheral in peripherals) {
+        [logs addObject:peripheral.resultForRssiTest];
+    }
+    //TODO 发送数据
+    NSString *URLSafeName = [self URLEncodedString:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"]];
+    NSString *URLSafeLog = [self URLEncodedString:[logs componentsJoinedByString:@"\n"]];
+    NSMutableString *URLString = [NSMutableString stringWithFormat:@"mailto:%@?subject=%@%%20Console%%20Log&body=%@",
+                                  @"david@paodong.cn" ?: @"", URLSafeName, URLSafeLog];
+    
     [TestPeripheralManger stopReadRSSI];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:URLString]];
+}
+
+- (NSString *)URLEncodedString:(NSString *)string
+{
+    return CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (__bridge CFStringRef)string, NULL, CFSTR("!*'\"();:@&=+$,/?%#[]% "), kCFStringEncodingUTF8));
 }
 
 -(void)updatePeripheral:(LGPeripheral *)peripheral{

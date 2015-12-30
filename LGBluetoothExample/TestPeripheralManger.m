@@ -45,13 +45,15 @@ static TestPeripheralManger *instance;
 - (void)readAllRSSI{
     for (LGPeripheral *peripheral in self.peripherals) {
         [peripheral readRSSIValueCompletion:^(NSNumber *rssi,NSError *error){
-            [peripheral.rssiArray addObject:rssi];
-            peripheral.RSSI = rssi.integerValue;
-            if ([self.delegate respondsToSelector:@selector(updateAllPeripheral:)]) {
-                [self.delegate updateAllPeripheral:self.peripherals];
-            }
-            if ([self.delegate respondsToSelector:@selector(updatePeripheral:)]) {
-                [self.delegate updatePeripheral:peripheral];
+            if (rssi) {
+                [peripheral.rssiArray addObject:rssi];
+                peripheral.RSSI = rssi.integerValue;
+                if ([self.delegate respondsToSelector:@selector(updateAllPeripheral:)]) {
+                    [self.delegate updateAllPeripheral:self.peripherals];
+                }
+                if ([self.delegate respondsToSelector:@selector(updatePeripheral:)]) {
+                    [self.delegate updatePeripheral:peripheral];
+                }
             }
         }];
     }

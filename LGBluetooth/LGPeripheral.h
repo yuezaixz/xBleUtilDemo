@@ -155,6 +155,8 @@ typedef void(^LGPeripheralRSSIValueCallback)(NSNumber *RSSI, NSError *error);
  */
 - (void)disconnectWithCompletion:(LGPeripheralConnectionCallback)aCallback;
 
+- (void)setDidconnectCallbackCompletion:(LGPeripheralConnectionCallback)aCallback;
+
 /**
  * Discoveres All services of this peripheral
  * @param aCallback Will be called after successfull/failure discovery
@@ -186,6 +188,7 @@ typedef void(^LGPeripheralRSSIValueCallback)(NSNumber *RSSI, NSError *error);
 - (NSInteger)countMoreThan50;
 - (NSInteger)countMoreThan70;
 - (NSInteger)countMoreThan90;
+- (NSString *)resultForRssiTest;
 #pragma mark - Private Handlers -
 
 // ----- Used for input events -----/
